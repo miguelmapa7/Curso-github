@@ -1,0 +1,4 @@
+Comados Git
+
+git init // Inicia e incorpora la carpeta a git
+git status // me permite ver es que area estoy 
