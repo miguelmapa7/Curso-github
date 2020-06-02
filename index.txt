@@ -2,3 +2,27 @@ Comados Git
 
 git init // Inicia e incorpora la carpeta a git
 git status // me permite ver es que area estoy 
+git add // permite agregar files to my area 
+git add -A // permite agregar varios files to my area
+git commit // permite subir the files to repository
+  // primero debes haber conectado con tu usuario en git
+  // para agragar email
+git commit -m "Aquí se pone un mensaje que indique alguna observación indicando cambios realizados y cosas así"
+  git config --global user.email "miguel.perezar@cecar.edu.co"
+  // Para agregar nombre de usuario
+  git config --global user.name "miguelmapa7"
+  // arriba de la terminar bin agregar texto que describa el commit
+  // comando para guardar los cambios
+  :wq + enter
+  // muetra progreso
+git log
+mkdir // Permite crear carpetas
+ls // ver directorios
+clear // Limpiar pantalla
+cd "nombreCarpeta"// Ir a otro directorio
+touch // permite crear archivos
+cd .. // permite volver a directorio anterior
+rm "nombre archivo" // Permite borrar archivos
+rm -rf "nombre Carpeta" // Permite borrar carpertas
+vim "nombre archivo" // Permite editar archivos wq = guardar: q! = salir sin guardar esc = para salir
+git rm -f "nombre archivo" // Permite borrar archivos del area
