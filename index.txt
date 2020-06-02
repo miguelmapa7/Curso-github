@@ -5,6 +5,7 @@ git status // me permite ver es que area estoy
 git add // permite agregar files to my area 
 git add -A // permite agregar varios files to my area
 git commit // permite subir the files to repository
+git commit --amend // modificar commits anteriores
   // primero debes haber conectado con tu usuario en git
   // para agragar email
 git commit -m "Aquí se pone un mensaje que indique alguna observación indicando cambios realizados y cosas así"
@@ -15,7 +16,7 @@ git commit -m "Aquí se pone un mensaje que indique alguna observación indicand
   // comando para guardar los cambios
   :wq + enter
   // muetra progreso
-git log
+git log // Permite ver los commits realizados
 mkdir // Permite crear carpetas
 ls // ver directorios
 clear // Limpiar pantalla
@@ -26,3 +27,48 @@ rm "nombre archivo" // Permite borrar archivos
 rm -rf "nombre Carpeta" // Permite borrar carpertas
 vim "nombre archivo" // Permite editar archivos wq = guardar: q! = salir sin guardar esc = para salir
 git rm -f "nombre archivo" // Permite borrar archivos del area
+// etiquetar commits
+git tag -a 0.5 -m 'mensaje'
+
+git tag -l   // listar tag
+git tag 0.3 "id commit"   // Etiquetar commit anterios por id
+git tag -d 0.3  // borrar tag
+git tag -f -a 0.2 -m 'mensaje' "id commit"
+git log --oneline // Para ver los commit reducidos
+git diff "id commit"  "id commit" // Comparar vesiones
+git reset --soft --mixed --hard // permite resetear versiones
+  --soft // vuelve el commit es state area
+  --mixed // vuelve el commit a working directory
+  --mixed // los borra
+git config --global core.editor "atom -- wait" // cambiar editor de text 
+git branch "name" // Crear ramas
+git branch -l // listar ramas
+git branch -d "name" // borrar rama
+git branch -D "name" // borrar rama forzadamente
+git branch -m "name" "name" // cambiar nombre
+git checkout "name" // Navegar entre ramas
+git checkout -b "name" // crea rama y navega en ella
+git merge "nombre rama" // Mezclar ramas
+git rebase // reescribe la historia de tu proyecto
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
